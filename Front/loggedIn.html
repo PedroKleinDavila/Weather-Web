@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="loggedIn.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body id="fora">
+    <a href="notLoggedIn.html"><button class="loginButton">Leave</button></a>
+    <div class="relogio some">
+        <span class="horas">10</span>
+        <span>:</span>
+        <span class="minutos">00</span>
+        <span>:</span>
+        <span class="segundos">00</span>
+    </div>
+    <article class="info-container">
+        <section class="widget" id="favoritos">
+
+        </section>
+        <section id="dentro" class="borda">
+            <div class="header">
+                <button id = "search-button" disabled="true" onclick="favoritos()"><img src="./assets/fav-vazio.svg"></button> 
+                <input type="text" id="input" class="pesquisa" placeholder="Name a City" set autocomplete="off">
+                <button id = "search-button" onclick="pesquisa()"><img src="./assets/search.svg"></button>
+            </div>
+            <img id="climai" class="imagem" src="./assets/Sunday-Clear.svg">
+            <br>
+            <span class="temp" id="temp"></span>
+            <br>
+            <span class="city" id="city"></span>
+            <br>
+            <div class="info-container">
+                <div class="info">
+                    <img src="./assets/iconegota.svg" class="humidity">
+                    <span class="windH" id="humidity"></span>
+                </div>
+                <div class="info">
+                    <img src="./assets/Wind.svg" class="wind">
+                    <span class="windH" id="wind"></span>
+                </div>
+            </div>
+        </section>
+        <section class="widget historico" id="historico">  
+        </section>
+    </article>
+    <script 
+    
+    src="./loggedIn.js">
+    </script>
+</body>
+</html>

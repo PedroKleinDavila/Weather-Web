@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+body{
+    height: 100vh;
+    background: linear-gradient(#5EB8ED,#E3EDF3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+span{
+    margin: 0px;
+}
+
+.loginButton{
+    font-family: "Fredoka", sans-serif;
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 50px;
+    margin-left: 1400px;
+    border: none;
+}
+
+.relogio{
+    margin-bottom: 40px;
+    font-size: 4rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    display: flex;
+}
+
+.some{
+    opacity: 0;
+}
+
+.borda{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(#5EB8ED,#E3EDF3);
+    height: 445px;
+    width: 417px;
+    border: 1mm;
+    border-radius: 20px;
+    text-align: center;
+}
+::placeholder{
+    opacity: 0.5;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.pesquisa{
+    font-family: Fredoka;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-overflow: hidden;
+    width: 292px;
+    height: 54px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.vermelho{
+    background-color: red;
+    color: white;
+    opacity: 0.5;
+}
+
+button{
+    background-color: white;
+    width: 56px;
+    height: 54px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #ededed;
+}
+
+button:active{background-color: rgb(202, 191, 191);}
+
+.imagem{ 
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.image-display{
+    display: none;
+}
+
+span{
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+.temp{
+    font: Franklin Gothic Medium;
+    font-size: 50px;
+    line-height: 56.69px;
+}
+.city{
+    font-family: Fredoka;
+    font-size: 40px;
+    line-height: 48.4px;
+}
+.windH{
+    font: Franklin Gothic Medium;
+    font-size: 24px;
+    line-height: 27.21px;
+}
+
+.info-container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+

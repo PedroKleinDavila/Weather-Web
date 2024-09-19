@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+span{
+    margin: 0px;
+}
+.loginButton{
+    position: absolute;
+    font-family: "Fredoka", sans-serif;
+    border-radius: 10px;
+    height: 40px;
+    z-index: 2;
+    margin-left: 1400px;
+    border: none;
+}
+.relogio{
+    margin-bottom: 40px;
+    font-size: 4rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500;
+    display: flex;
+    width: fit-content;
+    margin: 80px auto 0 auto; 
+}
+
+.some{
+    opacity: 0;
+}
+
+.borda{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(#5EB8ED,#E3EDF3);
+    height: 445px;
+    width: 417px;
+    border: 1mm;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+::placeholder{
+    opacity: 0.5;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.header{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pesquisa{
+    font-family: Fredoka;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    text-overflow: hidden;
+    width: 292px;
+    height: 54px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    outline: none;
+    background-color: #FFFFFF;
+}
+
+.vermelho{
+    background-color: red;
+    color: white;
+    opacity: 0.5;
+}
+
+button{
+    background-color: white;
+    width: 56px;
+    height: 54px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+}
+
+button img{
+    position: absolute;
+    top: calc(50% - 12px);
+    right: calc(50% - 12px);
+}
+
+button:hover{
+    background-color: #ededed;
+}
+
+button:active{background-color: rgb(202, 191, 191);}
+
+.imagem{ 
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.image-display{
+    display: none;
+}
+
+span{
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+.temp{
+    font: Franklin Gothic Medium;
+    font-size: 50px;
+    line-height: 56.69px;
+}
+.city{
+    font-family: Fredoka;
+    font-size: 40px;
+    line-height: 48.4px;
+}
+.windH{
+    font: Franklin Gothic Medium;
+    font-size: 24px;
+    line-height: 27.21px;
+}
+
+.info-container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 5px;
+}
+
+.info-container{
+    display: flex;
+    gap: 80px
+}
+
+.widget{
+    padding: 20px;
+    background-color: black;
+    /* display: grid; */
+    gap: 10px;
+    height: 520px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: #cfd3d560;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+    overflow-y: auto;
+}
+
+.widget::-webkit-scrollbar{
+    width: 15px;
+}
+
+.widget::-webkit-scrollbar-track{
+    background:#cfd3d580;
+    border-radius:0 20px 20px 0;
+}
+
+.widget::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: #cfd3d590;
+    border-radius:0 20px 20px 0;
+} 
+
+.item-historico{
+    align-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.clima{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icone{
+    width: 25px;
+}
+
+.icone-txt{
+    font-size: 1rem;
+}
+
+.texto{
+    font-size: 1rem;
+}
+
+.temperatura{
+    font-size: 1.5rem;
+}
+
+.item-favorito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 100%;
+    align-self: start;
+    height: 80px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.item-favorito:hover{
+    cursor:pointer;
+}
