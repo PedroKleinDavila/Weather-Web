@@ -14,14 +14,13 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
-
+    
 }
 
-.create{
+.loginButton{
    margin-bottom: 20px;
    width: 125px;
    height: 25px;
-   margin-left: 147px;
 }
 
 .text{
@@ -31,9 +30,6 @@ body{
     box-shadow: rgba(0, 0, 0, 0.24);
     text-align: center;
 }
-.apaga{
-    visibility: hidden;
-}
 button{
     height: 30px;
     border-radius: 15px;
@@ -42,14 +38,7 @@ button{
     cursor:pointer;
     transition: .3s;
 }
-button:active{
-    background-color: #878686;
-}
-.vermelho{
-    background-color: red;
-    color: white;
-    opacity: 0.5;
-}
+
 .button1{
    margin-bottom: 20px;
    width: 100px;
@@ -65,7 +54,7 @@ button:active{
 
 }
 
-.borda{
+.border{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     height: 445px;
@@ -73,32 +62,21 @@ button:active{
     border: 1mm;
     border-radius: 20px;
     text-align: center;
-    text-align: center;
+    margin-bottom: 20px;
+    width: 125px;
+    height: 25px;
 }
 
-button{
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+button:active{
+    background-color: #878686;
 }
-
-.button1{
-   margin-bottom: 20px;
-   width: 100px;
-   margin-left: 158px;
-
-}
-
-.inputs{
-    font-size: 20px;
-    font-weight: bold;
+.red{
+    background-color: red;
     color: white;
-    text-shadow: 1px 1px 1px black;
-
+    opacity: 0.5;
 }
 
-.borda{
+#in{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     height: 445px;

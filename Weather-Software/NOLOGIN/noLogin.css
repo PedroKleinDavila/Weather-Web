@@ -22,7 +22,7 @@ span{
     border: none;
 }
 
-.relogio{
+.clock{
     margin-bottom: 40px;
     font-size: 4rem;
     font-family: "Fredoka", sans-serif;
@@ -30,11 +30,11 @@ span{
     display: flex;
 }
 
-.some{
+.hide{
     opacity: 0;
 }
 
-.borda{
+.border{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     height: 445px;
@@ -51,7 +51,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-.pesquisa{
+.search{
     font-family: Fredoka;
     font-size: 25px;
     font-weight: 400;
@@ -67,7 +67,7 @@ input:focus::placeholder {
     background-color: #FFFFFF;
 }
 
-.vermelho{
+.red{
     background-color: red;
     color: white;
     opacity: 0.5;
@@ -90,7 +90,7 @@ button:hover{
 
 button:active{background-color: rgb(202, 191, 191);}
 
-.imagem{ 
+.image{ 
     margin-top: 60px;
     margin-bottom: 10px;
 }

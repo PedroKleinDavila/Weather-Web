@@ -1,14 +1,14 @@
 const login = document.getElementById("login");
 login.addEventListener('focus', () => {
-    login.classList.remove('vermelho');
+    login.classList.remove('red');
     login.placeholder='';
 });
 const password = document.getElementById("password");
 password.addEventListener('focus', () => {
-    password.classList.remove('vermelho');
+    password.classList.remove('red');
     password.placeholder='';
 });
-async function verificaLogin() {
+async function verifyLogin() {
     login1=String(document.getElementById("login").value);
     password1=String(document.getElementById("password").value);
     if(login1.length>0){
@@ -27,18 +27,18 @@ async function verificaLogin() {
             .then(data => dados=data)
             .catch(error => console.error('Error:', error));
             if(dados.status==500){
-                login.classList.add('vermelho');
+                login.classList.add('red');
                 login.value = "";
                 login.placeholder = "Invalid Login";
             }
-            else{window.location.href="login.html";}
+            else{window.location.href="../LOGIN/login.html";}
         }else{
-            password.classList.add('vermelho');
+            password.classList.add('red');
             password.value = "";
             password.placeholder = "Invalid Password";
         }
     }else{
-        login.classList.add('vermelho');
+        login.classList.add('red');
         login.value = "";
         login.placeholder = "Invalid Login";
     }

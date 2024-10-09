@@ -1,18 +1,18 @@
 const login2 = document.getElementById("login");
 login2.addEventListener('focus', () => {
-    login2.classList.remove('vermelho');
+    login2.classList.remove('red');
     login2.placeholder='';
 });
 const password2 = document.getElementById("password");
 password2.addEventListener('focus', () => {
-    password2.classList.remove('vermelho');
+    password2.classList.remove('red');
     password2.placeholder='';
 });
-const erro= document.getElementById("erro");
+const erro= document.getElementById("error");
 erro.addEventListener('focus', () =>{
-    erro.classList.add('apaga');
+    erro.classList.add('hidden');
 })
-async function verificaLogin() {
+async function verifyLogin() {
     let dados;
     let login1=String(document.getElementById("login").value);
     let password1=String(document.getElementById("password").value);
@@ -22,21 +22,21 @@ async function verificaLogin() {
     .then(data => dados=data)
     .catch(error => console.error('Error:', error));
     let tam=dados.length;
-    let bol=false;
+    let bool=false;
     let posicao=-1;
     for(var i=0;i<tam;i++){
         if(login1===dados[i].login&&password1===dados[i].password){
-            bol=true;
+            bool=true;
             posicao=i;
         }
     }
-    if(bol){window.location.href="loggedIn.html";}
+    if(bool){window.location.href="loggedIn.html";}
     else{
-        password2.classList.add('vermelho');
+        password2.classList.add('red');
         password2.value = "";
-        login2.classList.add('vermelho');
+        login2.classList.add('red');
         login2.value = "";
-        erro.classList.remove('apaga');
+        erro.classList.remove('hidden');
     }
     localStorage.setItem('data',posicao);
 }

@@ -6,9 +6,6 @@ body{
     position: relative;
 }
 
-span{
-    margin: 0px;
-}
 .loginButton{
     position: absolute;
     font-family: "Fredoka", sans-serif;
@@ -18,7 +15,7 @@ span{
     margin-left: 1400px;
     border: none;
 }
-.relogio{
+.clock{
     margin-bottom: 40px;
     font-size: 4rem;
     font-family: "Fredoka", sans-serif;
@@ -28,11 +25,11 @@ span{
     margin: 80px auto 0 auto; 
 }
 
-.some{
+.hide{
     opacity: 0;
 }
 
-.borda{
+.border{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background: linear-gradient(#5EB8ED,#E3EDF3);
     height: 445px;
@@ -56,7 +53,7 @@ input:focus::placeholder {
     margin-top: 15px;
 }
 
-.pesquisa{
+.search{
     font-family: Fredoka;
     font-size: 25px;
     font-weight: 400;
@@ -71,7 +68,7 @@ input:focus::placeholder {
     background-color: #FFFFFF;
 }
 
-.vermelho{
+.red{
     background-color: red;
     color: white;
     opacity: 0.5;
@@ -101,7 +98,7 @@ button:hover{
 
 button:active{background-color: rgb(202, 191, 191);}
 
-.imagem{ 
+.image{ 
     margin-top: 60px;
     margin-bottom: 10px;
 }
@@ -111,6 +108,7 @@ button:active{background-color: rgb(202, 191, 191);}
 }
 
 span{
+    margin: 0px;
     font-weight: 400;
     text-align: center;
     color: white;
@@ -136,6 +134,7 @@ span{
     width: fit-content;
     margin: 0 auto;
     align-items: center;
+    gap: 80px;
 }
 
 .info{
@@ -145,15 +144,9 @@ span{
     gap: 5px;
 }
 
-.info-container{
-    display: flex;
-    gap: 80px
-}
-
 .widget{
     padding: 20px;
     background-color: black;
-    /* display: grid; */
     gap: 10px;
     height: 520px;
     width: 250px;
@@ -179,7 +172,7 @@ span{
     border-radius:0 20px 20px 0;
 } 
 
-.item-historico{
+.historic-item{
     align-self: start;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,29 +184,23 @@ span{
     margin-top: 10px;
 }
 
-.clima{
-    width: 50px;
-    display: block;
-    margin: 0 auto;
-}
-
-.icone{
+.icon{
     width: 25px;
 }
 
-.icone-txt{
+.icon-txt{
     font-size: 1rem;
 }
 
-.texto{
+.text{
     font-size: 1rem;
 }
 
-.temperatura{
+.temperature{
     font-size: 1.5rem;
 }
 
-.item-favorito{
+.favorite-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +212,6 @@ span{
     border-radius: 10px;
     margin-top: 10px;
 }
-.item-favorito:hover{
+.favorite-item:hover{
     cursor:pointer;
 }

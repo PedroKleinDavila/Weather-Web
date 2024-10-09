@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
 </head>
-<body id="fora">
-    <a href="notLoggedIn.html"><button class="loginButton">Leave</button></a>
-    <div class="relogio some">
-        <span class="horas">10</span>
+<body id="out">
+    <a href="noLogin.html"><button class="loginButton">Leave</button></a>
+    <div class="clock hide">
+        <span class="hours">10</span>
         <span>:</span>
-        <span class="minutos">00</span>
+        <span class="minutes">00</span>
         <span>:</span>
-        <span class="segundos">00</span>
+        <span class="seconds">00</span>
     </div>
     <article class="info-container">
-        <section class="widget" id="favoritos">
+        <section class="widget" id="favorites">
 
         </section>
-        <section id="dentro" class="borda">
+        <section id="in" class="border">
             <div class="header">
-                <button id = "search-button" disabled="true" onclick="favoritos()"><img src="./assets/fav-vazio.svg"></button> 
-                <input type="text" id="input" class="pesquisa" placeholder="Name a City" set autocomplete="off">
-                <button id = "search-button" onclick="pesquisa()"><img src="./assets/search.svg"></button>
+                <button id = "search-button" disabled="true" onclick="favorites()"><img src="../assets/fav-vazio.svg"></button> 
+                <input type="text" id="input" class="search" placeholder="Name a City" set autocomplete="off">
+                <button id = "search-button" onclick="search()"><img src="../assets/search.svg"></button>
             </div>
-            <img id="climai" class="imagem" src="./assets/Sunday-Clear.svg">
+            <img id="weather1" class="image" src="../assets/Sunday-Clear.svg">
             <br>
             <span class="temp" id="temp"></span>
             <br>
@@ -33,16 +33,16 @@
             <br>
             <div class="info-container">
                 <div class="info">
-                    <img src="./assets/iconegota.svg" class="humidity">
+                    <img src="../assets/iconegota.svg" class="humidity">
                     <span class="windH" id="humidity"></span>
                 </div>
                 <div class="info">
-                    <img src="./assets/Wind.svg" class="wind">
+                    <img src="../assets/Wind.svg" class="wind">
                     <span class="windH" id="wind"></span>
                 </div>
             </div>
         </section>
-        <section class="widget historico" id="historico">  
+        <section class="widget historic" id="historic">  
         </section>
     </article>
     <script 
